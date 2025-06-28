@@ -1,0 +1,16 @@
+services:
+  - type: worker
+    name: modsentinel-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: BOT_TOKEN
+        sync: false  # This will be set manually in Render dashboard
+      - key: ADMIN_IDS
+        sync: false  # This will be set manually in Render dashboard
+    autoDeploy: true
+    branch: main
