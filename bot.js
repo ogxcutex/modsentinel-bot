@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Bot configuration
-const BOT_TOKEN = process.env.BOT_TOKEN || 'YOUR_BOT_TOKEN_HERE';
-const ADMIN_IDS = process.env.ADMIN_IDS ? process.env.ADMIN_IDS.split(',').map(id => parseInt(id)) : [123456789]; // Replace with actual admin IDs
+const BOT_TOKEN = process.env.BOT_TOKEN || '7785059081:AAFJK2Bhyp7OAF8lrTgMPdrPRPrxHxxOCVg';
+const ADMIN_IDS = process.env.ADMIN_IDS ? process.env.ADMIN_IDS.split(',').map(id => parseInt(id)) : [7305252437]; // Replace with actual admin IDs
 
 // Initialize bot
 const bot = new Telegraf(BOT_TOKEN);
